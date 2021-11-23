@@ -1,5 +1,5 @@
 {
-  "name": "field-database",
+  "name": "field-database-hans",
   "version": "1.0.0",
   "description": "fieldDB object modeling for node.js",
   "main": "index.ts",
