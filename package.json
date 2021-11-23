@@ -9,6 +9,7 @@
   "keywords": [
     "database"
   ],
+  "git-repository": "https://github.com/hemae/field-database",
   "author": "Hans Andersen <hemae2468@gmail.com>",
   "license": "ISC",
   "dependencies": {
