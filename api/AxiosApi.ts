@@ -20,7 +20,7 @@ type AxiosApiOptionsType = {
     contentType?: ContentType
 }
 
-class AxiosApi {
+export class AxiosApi {
 
     readonly _basePath: string = ''
     readonly _contentType: ContentType = 'application/json'
@@ -51,6 +51,3 @@ class AxiosApi {
         })
     }
 }
-
-
-export default AxiosApi

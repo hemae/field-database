@@ -1,4 +1,4 @@
-import AxiosApi from './AxiosApi'
+import {AxiosApi} from './AxiosApi'
 import {AxiosResponse} from 'axios'
 
 
@@ -11,10 +11,8 @@ export type FieldConnectionApiOptionsType = {
     token: string
 }
 
-const fieldConnectionAPI = {
+export const fieldConnectionAPI = {
     connect({token}: FieldConnectionApiOptionsType): Promise<ConnectAxiosResponseType> {
         return api.getPromiseResponse<ConnectResponseType>({path: '/', method: 'get', token})
     }
 }
-
-export default fieldConnectionAPI

@@ -1,5 +1,5 @@
 import {AxiosResponse} from 'axios'
-import AxiosApi from './AxiosApi'
+import {AxiosApi} from './AxiosApi'
 
 
 const api = new AxiosApi({basePath: 'http://localhost:5000/api/collections'})
@@ -29,7 +29,7 @@ export type FieldApiOptionsType<ModelType> = {
 }
 
 
-const fieldCollectionsAPI = {
+export const fieldCollectionsAPI = {
     save<ModelType>({token, data}: FieldApiOptionsType<ModelType>): Promise<SaveAxiosResponseType> {
         return api.getPromiseResponse<SaveResponseType>({path: '/save', method: 'put', token, data})
     },
@@ -59,5 +59,3 @@ const fieldCollectionsAPI = {
         })
     }
 }
-
-export default fieldCollectionsAPI

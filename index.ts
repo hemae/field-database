@@ -1,8 +1,8 @@
-import fieldCollectionsAPI from './api/fieldCollectionsAPI'
+import {fieldCollectionsAPI} from './api/fieldCollectionsAPI'
 import {Capitalize, keysComparator} from './tools/helpers'
 import {readFileSync, writeFileSync} from 'fs'
 import idGenerator from './tools/idGenerator'
-import fieldConnectionAPI from './api/fieldConnectionAPI'
+import {fieldConnectionAPI} from './api/fieldConnectionAPI'
 
 
 const path = require('path')
