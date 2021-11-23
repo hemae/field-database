@@ -1,7 +1,7 @@
 import {fieldCollectionsAPI} from './api/fieldCollectionsAPI'
 import {Capitalize, keysComparator} from './tools/helpers'
 import {readFileSync, writeFileSync} from 'fs'
-import idGenerator from './tools/idGenerator'
+import {generateId} from './tools/idGenerator'
 import {fieldConnectionAPI} from './api/fieldConnectionAPI'
 
 
@@ -35,7 +35,7 @@ export function Model<ModelType extends FieldDocumentType>(modelName: string, sc
             throw new Error(e.message)
         }
 
-        this._id = idGenerator()
+        this._id = generateId()
         this._creationDate = dateCreator()
         this._updatingDate = null
         this.save = async function (): Promise<void> {
