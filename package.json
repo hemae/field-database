@@ -1,0 +1,21 @@
+{
+  "name": "field-database",
+  "version": "1.0.0",
+  "description": "fieldDB object modeling for node.js",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "keywords": [
+    "database"
+  ],
+  "author": "Hans Andersen <hemae2468@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
