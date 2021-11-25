@@ -15,7 +15,7 @@ export function keysComparator(obj1: any, obj2: any, modelName: string) {
     for (let key in obj1) {
         if (obj1.hasOwnProperty(key) && obj2.hasOwnProperty(key)) {
             if (obj1[key].type !== typeof obj2[key]) {
-                throw new Error(`Property "${key}" should be ${obj1[key].type} type but got ${typeof obj2[key]}`)
+                throw new Error(`Property "${key}" should be "${obj1[key].type}" type but got "${typeof obj2[key]}"`)
             }
         }
     }
