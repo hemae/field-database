@@ -18,7 +18,8 @@ fieldDB object modeling for node.js
 * [Errors](#errors)
 
 <a name="features"><h2>Features</h2></a>
-ftrs
+* creation of custom classes (models) for the production of the required objects according to a pre-specified scheme
+* validation of created objects by type, need for data availability, existence of declared keys (setting when creating a model)
 
 <a name="installing"><h2>Installing</h2></a>
 Add the package to your project
