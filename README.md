@@ -5,7 +5,6 @@ fieldDB object modeling for node.js
 * [Features](#features)
 * [Installing](#installing)
 * [Example](#example)
-<<<<<<< HEAD
     + [Model creation](#model-creation)
     + [Connection](#connection)
     + [Usage](#usage)
@@ -16,18 +15,6 @@ fieldDB object modeling for node.js
         - [findOne](#findOne)
         - [findByIdAndUpdate](#findByIdAndUpdate)
         - [findByIdAndDelete](#findByIdAndDelete)
-=======
-  + [Model creation](#model-creation)
-  + [Connection](#connection)
-  + [Usage](#usage)
-  + [Available methods](#available-methods)
-    - [save](#save)
-    - [find](#find)
-    - [findById](#findById)
-    - [findOne](#findOne)
-    - [findByIdAndUpdate](#findByIdAndUpdate)
-    - [findByIdAndDelete](#findByIdAndDelete)
->>>>>>> origin/master
 * [Errors](#errors)
 
 <a name="features"><h2>Features</h2></a>
@@ -130,11 +117,7 @@ start()
 <a name="usage"><h3>Usage</h3></a>
 Continuing with the example above, using express router.      
 Here we create new instance providing initial parameters.        
-<<<<<<< HEAD
-Method *save* makes corresponding records in database.
-=======
-Method *save* makes corresponding records in database.        
->>>>>>> origin/master
+Method *save* makes corresponding records in database.     
 
 ```typescript
 import Message from '../models/Message'
