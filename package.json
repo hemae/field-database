@@ -1,10 +1,10 @@
 {
-  "name": "field-database-hans",
-  "version": "1.0.1",
+  "name": "field-database",
+  "version": "1.0.9",
   "description": "fieldDB object modeling for node.js",
-  "main": "index.ts",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "ts-node index.ts"
+    "build": "tsc"
   },
   "keywords": [
     "database"
