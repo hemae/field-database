@@ -219,7 +219,7 @@ With creation we should provide all required parameters without default values. 
 If we make the mistake, we can get one of following error messages:
 
 ```
-Property "messageText" is required on type Message}
+Property "messageText" is required on type Message
 ```
 
 ```
