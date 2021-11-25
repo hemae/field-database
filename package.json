@@ -1,6 +1,6 @@
 {
   "name": "field-database",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "fieldDB object modeling for node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "keywords": [
     "database"
   ],
-  "git-repository": "https://github.com/hemae/field-database",
+  "repository": "git://github.com/hemae/field-database",
   "author": "Hans Andersen <hemae2468@gmail.com>",
   "license": "ISC",
   "dependencies": {
