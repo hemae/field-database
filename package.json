@@ -1,6 +1,6 @@
 {
   "name": "field-database",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "fieldDB object modeling for node.js",
   "main": "lib/index.js",
   "scripts": {
