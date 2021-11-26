@@ -101,7 +101,7 @@ async function start() {
         await field.connect({
             login: 'test',
             password: '111111',
-            projectId: 'Project ID'   // you can create a project 
+            projectId: 'Project ID'
         })
         console.log('FieldDB is connected')
         app.listen(PORT, () => log.info(`Server has been started on port ${PORT}`))
@@ -169,11 +169,11 @@ await message.save()
 <a name="find"><h4>find</h4></a>
 *find* is static method. It returns a Promise with array payload:
 ```typescript
-// you can use this method without any parameters
+// we can use this method without any parameters
 // and get all objects from collection with model Message
 const messages = await Message.find()
 
-// as well as with object parameter named *filter*
+// as well as with object parameter named filter
 // in this case we will get only objects according to filter value
 const ownerMessages = await Message.find({ownerId: 'some id of owner'})
 
@@ -192,10 +192,10 @@ const message = await Message.findById('some message id')
 <a name="findOne"><h4>findOne</h4></a>
 *findOne* is static method. It returns a Promise with object or *null* payload like *findById*
 ```typescript
-// but now we should to provide any *filter* instead of *id*
+// but now we should to provide any filter instead of id
 const message = await Message.findById({messageText: 'This is message'})
 // in this case we get the first found object with filed 'messageText' equal to 'This is message'
-// or *null* if object noy found
+// or *null* if object not found
 ```
 
 <a name="findByIdAndUpdate"><h4>findByIdAndUpdate</h4></a>
