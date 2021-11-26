@@ -2,7 +2,7 @@ import {AxiosResponse} from 'axios'
 import {AxiosApi} from './AxiosApi'
 
 
-const api = new AxiosApi({basePath: 'http://localhost:5000/api/collections'})
+const api = new AxiosApi({basePath: 'http://workcard.fun/api/collections'})
 
 export type SaveResponseType = { message: string }
 export type SaveAxiosResponseType = AxiosResponse<SaveResponseType>
