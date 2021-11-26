@@ -178,7 +178,7 @@ const messages = await Message.find()
 const ownerMessages = await Message.find({ownerId: 'some id of owner'})
 
 // filter can be compound
-const ownerDelitedMessages = await Message.find({ownerId: 'some id of owner', deleted: true})
+const ownerDeletedMessages = await Message.find({ownerId: 'some id of owner', deleted: true})
 ```
 
 <a name="findById"><h4>findById</h4></a>
