@@ -88,7 +88,7 @@ When we create a schema for the model, we may specify *type*, *require* and *def
 ---
 <a name="connection"><h3>Connection to database</h3></a>
 *!Before connecting to database, make you sure you have network connection!*         
-Usning express (TypeScript):
+Using express (TypeScript):
 ```typescript
 import {Express} from 'express'
 const express = require('express')
