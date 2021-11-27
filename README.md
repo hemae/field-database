@@ -216,7 +216,7 @@ await Message.findByIdAndDelete('some message id')
 
 ---
 <a name="errors"><h3>Errors</h3></a>
-With creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
+With model creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
 If we make the mistake, we can get one of following error messages:
 
 ```
