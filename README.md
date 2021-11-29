@@ -172,7 +172,6 @@ await message.save()
 // we can use this method without any parameters
 // and get all objects from collection with model Message
 const messages = await Message.find()
-
 // as well as with object parameter named filter
 // in this case we will get only objects according to filter value
 const ownerMessages = await Message.find({ownerId: 'some id of owner'})
@@ -194,8 +193,6 @@ const message = await Message.findById('some message id')
 ```typescript
 // but now we should to provide any filter instead of id
 const message = await Message.findById({messageText: 'This is message'})
-// in this case we get the first found object with filed 'messageText' equal to 'This is message'
-// or *null* if object not found
 // in this case we get the first found object with field 'messageText' equal to 'This is message'
 // or null if object not found
 ```
@@ -220,8 +217,6 @@ await Message.findByIdAndDelete('some message id')
 <a name="errors"><h3>Errors</h3></a>
 
 With model creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
-
-With creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
 
 If we make the mistake, we get one of following error messages:
 
