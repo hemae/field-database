@@ -116,9 +116,9 @@ start()
 
 ---
 <a name="usage"><h3>Usage</h3></a>
-Continuing with the example above, using express router.      
-Here we create new instance providing initial parameters.        
-Method *save* makes corresponding records in database.     
+Continuing with the example above, using express router.
+Here we create new instance providing initial parameters.
+Method *save* makes corresponding records in database.
 
 ```typescript
 import Message from '../models/Message'
@@ -196,6 +196,8 @@ const message = await Message.findById('some message id')
 const message = await Message.findById({messageText: 'This is message'})
 // in this case we get the first found object with filed 'messageText' equal to 'This is message'
 // or *null* if object not found
+// in this case we get the first found object with field 'messageText' equal to 'This is message'
+// or null if object not found
 ```
 
 <a name="findByIdAndUpdate"><h4>findByIdAndUpdate</h4></a>
@@ -216,7 +218,11 @@ await Message.findByIdAndDelete('some message id')
 
 ---
 <a name="errors"><h3>Errors</h3></a>
+
 With model creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
+
+With creation we should provide all required parameters without default values. Also we have to pass values of the correct types.
+
 If we make the mistake, we get one of following error messages:
 
 ```

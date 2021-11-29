@@ -1,6 +1,6 @@
 {
   "name": "field-database",
-  "version": "1.0.13",
+  "version": "1.0.16",
   "description": "fieldDB object modeling for node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "author": "Hans Andersen <hemae2468@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "hans-id": "^1.0.1"
   },
   "devDependencies": {
     "ts-node": "^10.4.0",

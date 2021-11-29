@@ -1,7 +1,7 @@
 import {fieldCollectionsAPI} from './api/fieldCollectionsAPI'
-import {Capitalize, keysComparator} from './tools/helpers'
+import {Capitalize, dateCreator, keysComparator} from './tools/helpers'
 import {readFileSync, writeFileSync} from 'fs'
-import {generateId} from './tools/idGenerator'
+import generateId from 'hans-id'
 import {fieldConnectionAPI} from './api/fieldConnectionAPI'
 
 
@@ -16,8 +16,6 @@ export type FieldDocumentType = {
 }
 
 export function Model<ModelType extends FieldDocumentType>(modelName: string, schema: any) {
-
-    const dateCreator = (): number => Date.now()
 
     const collectionName = modelName.toLowerCase() + `${modelName[modelName.length - 1] === 's' ? 'es' : 's'}`
 

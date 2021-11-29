@@ -20,3 +20,7 @@ export function keysComparator(obj1: any, obj2: any, modelName: string) {
         }
     }
 }
+
+export function dateCreator(): number {
+    return Date.now()
+}
